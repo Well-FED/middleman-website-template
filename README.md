@@ -1,69 +1,43 @@
-# Middleman Website Template
+# Middleman4 + Webpack template
 
-This static site generator template is written for Middleman. It contains [plenty of rich features every website should have](./FEATURES.md), such as:
+This repo is structured as a Middleman Template.
 
-- Performance improvements
-- Progressive Web App capabilities
-- Opengraph configuration
+If you've never used a template to initialise a Middleman project, head over to [middlemanapp.com/…/project-templates](https://middlemanapp.com/advanced/project-templates/) to find out how to they work.
 
-## Installation
+## Setup
 
-1. Clone this repo into a local directory
-2. Change to your new local directory
-3. `brew install ImageMagick` (Required for the `middleman-favicon-maker` gem)
-4. `bundle install`
-5. `npm i`
-6. `middleman`
+### Install Middleman
 
-## Development
+First, get [middleman](https://middlemanapp.com/) installed.
 
-### Defining JS manifests
+```
+gem install middleman
+```
 
-To create the link between Webpack bundles and Middleman's HTML, you need to define each manifest or entry as follows:
+### Initialise from this project template
 
-- Define the Webpack entries in `config/entries.js`
-- Create corresonding `<script>` references in in `source/_layouts/layout.erb`
+Then in your parent directory…
 
-### Defining CSS manifests
+```
+middleman init PROJECT_NAME -T Well-FED/middleman-website-template
+```
 
-- Define the Webpack entries in `config/entries.js`
-- Create corresonding `<link>` references in in `source/_layouts/layout.erb`
+Middleman will then use this repo as your new project template.
 
-## Build
+### Installing further dependencies
 
-### Doing environment-specific builds
+Change to your new project directory…
 
-All builds default to production mode
+```
+cd PROJECT_NAME
+```
 
-    middleman build
+…and install any further dependencies:
 
-If you want a STAGING specific build use the following:
+```
+npm i
+```
 
-    middleman build -e staging
+## Next steps
 
-## Building for STAGING:
-
-    git checkout develop
-    git pull origin develop
-    middleman build -e staging
-
-## Building for PRODUCTION:
-
-    git checkout master
-    git pull origin master
-    middleman build -e production
-
-## Deployment
-
-### Deployment options
-
-Try one of the following gems for deployment options:
-
-- `middleman_gh-pages` for Github Pages deployments
-- `middleman-s3_sync` for S3 deployments.
-
-Follow up your deployment tasks with the following CDN and cache invalidation options:
-
-- `middleman-cloudfront` for AWS-specific CDNs
-- `middleman-cdn` for CloudFlare CDNs
-
+Now check out `README.md` in your project directory.
