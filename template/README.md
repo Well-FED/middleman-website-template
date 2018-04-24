@@ -1,6 +1,6 @@
 # Middleman Website Template
 
-This static site generator template is written for Middleman. It contains [plenty of rich features every website should have](./FEATURES.md), such as:
+This static site generator template is written for Middleman. It contains [plenty of rich features every website should have](https://github.com/Well-FED/middleman-website-template/FEATURES.md), such as:
 
 - Performance improvements
 - Progressive Web App capabilities
