@@ -32,11 +32,7 @@ Change to your new project directory…
 cd PROJECT_NAME
 ```
 
-…and install any further dependencies:
-
-```
-npm i
-```
+…and follow the installation instructions inside the new `README`
 
 ## Next steps
 
