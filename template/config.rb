@@ -39,14 +39,17 @@ page '/*.txt', layout: false
 
 configure :development do
   set :env, 'development'
+  activate :dotenv, env: '.env.development'
 end
 
 configure :staging do
   set :env, 'staging'
+  activate :dotenv, env: '.env.staging'
 end
 
 configure :production do
   set :env, 'production'
+  activate :dotenv, env: '.env.production'
 end
 
 # Server config (Development by default)

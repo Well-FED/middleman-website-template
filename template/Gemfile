@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
 
+# Core gems
 gem 'middleman', '~> 4.2'
+gem 'middleman-dotenv'
+
+# Development gems
 gem 'middleman-livereload'
+
+# Production gems
 gem 'middleman-minify-html'
 gem 'middleman-robots'
 gem 'middleman-favicon-maker', '~> 4.1'
