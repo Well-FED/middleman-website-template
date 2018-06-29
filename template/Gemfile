@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
-# Core gems
+# Core
 gem 'middleman', '~> 4.2'
-gem 'middleman-dotenv'
 
-# Development gems
+# Config
+gem 'middleman-dotenv', git: "https://github.com/roughneck/middleman-dotenv"
+
+# Development
 gem 'middleman-livereload'
 
-# Production gems
+# Production
 gem 'middleman-minify-html'
-gem 'middleman-robots'
 gem 'middleman-favicon-maker', '~> 4.1'
