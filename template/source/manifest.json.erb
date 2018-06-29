@@ -12,7 +12,7 @@
   "icons": [
     <% data.site.icons.each_with_index do |icon, index| %>
     {
-      "href": "<%= icon.href %>",
+      "src": "<%= icon.href %>",
       "sizes": "<%= icon.sizes %>"
     }<%= ',' if index + 1 < data.site.icons.count %>
     <% end %>
