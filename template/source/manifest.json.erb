@@ -7,12 +7,14 @@
   <% if data.site.try(:display) %>
   "display": "<%= data.site.display %>",
   <% end %>
-  "theme_color": "<%= data.site.theme.background_color %>",
+  "start_url": "/?utm_source=manifest",
+  "theme_color": "<%= data.site.theme.foreground_color %>",
+  "background_color": "<%= data.site.theme.background_color %>",
   <% if data.site.try(:icons) && data.site.icons.length > 0 %>
   "icons": [
     <% data.site.icons.each_with_index do |icon, index| %>
     {
-      "href": "<%= icon.href %>",
+      "src": "<%= icon.href %>",
       "sizes": "<%= icon.sizes %>"
     }<%= ',' if index + 1 < data.site.icons.count %>
     <% end %>
