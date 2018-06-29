@@ -39,19 +39,19 @@ All builds default to production mode
 
 If you want a STAGING specific build use the following:
 
-    middleman build -e staging
+    APP_ENV=staging middleman build
 
 ## Building for STAGING:
 
     git checkout develop
     git pull origin develop
-    middleman build -e staging
+    APP_ENV=staging middleman build
 
 ## Building for PRODUCTION:
 
     git checkout master
     git pull origin master
-    middleman build -e production
+    APP_ENV=production middleman build
 
 ## Deployment
 
