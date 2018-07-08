@@ -12,7 +12,7 @@
   },
   /*
   "orientation": "portrait", || "landscape"
-  "display": "standalone",
+  "display_type": "standalone",
   */
   "make_icons": false,
   "icons": [

@@ -4,8 +4,8 @@
   <% if data.site.try(:orientation) %>
   "orientation": "<%= data.site.orientation %>",
   <% end %>
-  <% if data.site.try(:display) %>
-  "display": "<%= data.site.display %>",
+  <% if data.site.try(:display_type) %>
+  "display": "<%= data.site.display_type %>",
   <% end %>
   "start_url": "/?utm_source=manifest",
   "theme_color": "<%= data.site.theme.foreground_color %>",
