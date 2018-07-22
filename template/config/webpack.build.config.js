@@ -11,6 +11,8 @@ const postCSSConfig = require('./postcss.config');
 // Setup
 let buildConfig = baseConfig;
 
+buildConfig.mode = 'production';
+
 buildConfig.output = {
   path: PATHS.DIST_JS,
   filename: '[name].js'

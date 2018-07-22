@@ -12,6 +12,8 @@ const postCSSConfig = require('./postcss.config');
 // Start off with the baseConfig
 let serverConfig = baseConfig;
 
+serverConfig.mode = 'development';
+
 // Then extend the baseConfig
 serverConfig.devServer = {
   contentBase: PATHS.BUILD,
